@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORIGIN — Refined Modern Fashion</title>
+  <meta name="description" content="ORIGIN is a premium minimalist clothing brand crafted for those who appreciate refined simplicity, sustainable luxury, and timeless style." />
+  <meta name="keywords" content="ORIGIN, luxury fashion, minimalist clothing, premium brand, sustainable fashion" />
+  <meta property="og:title" content="ORIGIN — Refined Modern Fashion" />
+  <meta property="og:description" content="Discover ORIGIN — where simplicity meets luxury. Timeless pieces for the modern individual." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-brand">ORIGIN</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#hero" class="nav-logo">ORIGIN</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#lookbook" class="nav-link">Lookbook</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search" id="searchBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart" id="cartBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <nav class="mobile-nav">
+      <a href="#collections" class="mobile-link" id="mLink1">Collections</a>
+      <a href="#about" class="mobile-link" id="mLink2">Our Story</a>
+      <a href="#lookbook" class="mobile-link" id="mLink3">Lookbook</a>
+      <a href="#contact" class="mobile-link" id="mLink4">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero_fashion.png" alt="ORIGIN hero fashion" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">New Season 2026</div>
+      <h1 class="hero-title reveal-up delay-1">Wear the<br /><em>Light.</em></h1>
+      <p class="hero-sub reveal-up delay-2">Refined pieces for the effortlessly modern individual. Sustainable. Timeless. Luminous.</p>
+      <div class="hero-ctas reveal-up delay-3">
+        <a href="#collections" class="btn btn-primary">Shop Collection</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>TIMELESS DESIGN</span>
+      <span class="dot">✦</span>
+      <span>SUSTAINABLE LUXURY</span>
+      <span class="dot">✦</span>
+      <span>CRAFTED IN INDIA</span>
+      <span class="dot">✦</span>
+      <span>FREE WORLDWIDE SHIPPING</span>
+      <span class="dot">✦</span>
+      <span>TIMELESS DESIGN</span>
+      <span class="dot">✦</span>
+      <span>SUSTAINABLE LUXURY</span>
+      <span class="dot">✦</span>
+      <span>CRAFTED IN EUROPE</span>
+      <span class="dot">✦</span>
+      <span>FREE WORLDWIDE SHIPPING</span>
+      <span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ========== COLLECTIONS ========== -->
+  <section class="collections" id="collections">
+    <div class="section-header reveal-up">
+      <span class="section-tag">— Our Collections —</span>
+      <h2 class="section-title">Pieces That Endure</h2>
+      <p class="section-sub">Crafted from nature's finest materials, designed to transcend seasons.</p>
+    </div>
+
+    <div class="filters reveal-up">
+      <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+      <button class="filter-btn" data-filter="women" id="filterWomen">Women</button>
+      <button class="filter-btn" data-filter="men" id="filterMen">Men</button>
+      <button class="filter-btn" data-filter="essentials" id="filterEssentials">Essentials</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card reveal-up" data-category="women" data-price="320">
+        <div class="product-img-wrap">
+          <img src="images/product_dress.png" alt="Ivory Slip Dress" class="product-img" />
+          <div class="product-badges">
+            <span class="badge badge-new">New</span>
+          </div>
+          <div class="product-actions">
+            <button class="add-to-cart" data-name="Ivory Silk Slip Dress" data-price="320" id="cart-btn-1">Add to Bag</button>
+            <button class="wishlist-btn" aria-label="Add to wishlist" id="wish-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Women · Dresses</span>
+          <h3 class="product-name">Ivory Silk Slip Dress</h3>
+          <div class="product-price">
+            <span class="price">₹320</span>
+          </div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#F5F0E8;" title="Ivory"></span>
+            <span class="color-dot" style="background:#C9B99A;" title="Sand"></span>
+            <span class="color-dot" style="background:#2C2C2C;" title="Midnight"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal-up delay-1" data-category="men" data-price="185">
+        <div class="product-img-wrap">
+          <img src="images/product_shirt.png" alt="Linen Classic Shirt" class="product-img" />
+          <div class="product-badges">
+            <span class="badge badge-best">Bestseller</span>
+          </div>
+          <div class="product-actions">
+            <button class="add-to-cart" data-name="Artisan Linen Shirt" data-price="185" id="cart-btn-2">Add to Bag</button>
+            <button class="wishlist-btn" aria-label="Add to wishlist" id="wish-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Men · Shirts</span>
+          <h3 class="product-name">Artisan Linen Shirt</h3>
+          <div class="product-price">
+            <span class="price">₹185</span>
+          </div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#E8DFD0;" title="Cream"></span>
+            <span class="color-dot" style="background:#7A9E9F;" title="Sage"></span>
+            <span class="color-dot" style="background:#8B7355;" title="Clay"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal-up delay-2" data-category="women" data-price="580">
+        <div class="product-img-wrap">
+          <img src="images/product_jacket.png" alt="Tailored Trench Coat" class="product-img" />
+          <div class="product-badges">
+            <span class="badge badge-ltd">Limited</span>
+          </div>
+          <div class="product-actions">
+            <button class="add-to-cart" data-name="Tailored Trench Coat" data-price="580" id="cart-btn-3">Add to Bag</button>
+            <button class="wishlist-btn" aria-label="Add to wishlist" id="wish-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Women · Outerwear</span>
+          <h3 class="product-name">Tailored Trench Coat</h3>
+          <div class="product-price">
+            <span class="price">₹580</span>
+          </div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#C4A882;" title="Camel"></span>
+            <span class="color-dot" style="background:#F5F0E8;" title="Ivory"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal-up delay-3" data-category="essentials" data-price="95">
+        <div class="product-img-wrap">
+          <img src="images/product_shirt.png" alt="Essential Tee" class="product-img" style="filter:hue-rotate(10deg) saturate(0.7);" />
+          <div class="product-badges">
+            <span class="badge badge-new">New</span>
+          </div>
+          <div class="product-actions">
+            <button class="add-to-cart" data-name="Supima Cotton Essential Tee" data-price="95" id="cart-btn-4">Add to Bag</button>
+            <button class="wishlist-btn" aria-label="Add to wishlist" id="wish-4">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Essentials · Tops</span>
+          <h3 class="product-name">Supima Cotton Essential Tee</h3>
+          <div class="product-price">
+            <span class="price">₹95</span>
+          </div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#FFFFFF;border:1px solid #ddd;" title="White"></span>
+            <span class="color-dot" style="background:#E8DFD0;" title="Cream"></span>
+            <span class="color-dot" style="background:#2C2C2C;" title="Black"></span>
+            <span class="color-dot" style="background:#7A9E9F;" title="Sage"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="view-all-wrap reveal-up">
+      <a href="#" class="btn btn-primary" id="viewAllBtn">View All Pieces</a>
+    </div>
+  </section>
+
+  <!-- ========== BANNER ========== -->
+  <section class="banner-section reveal-up">
+    <div class="banner-inner">
+      <div class="banner-text">
+        <span class="banner-tag">New Drop</span>
+        <h2 class="banner-title">The Soleil Edit</h2>
+        <p class="banner-desc">Sun-warmed fabrics. Effortless silhouettes. Summer's most refined collection, arriving July 25.</p>
+        <a href="#" class="btn btn-dark" id="bannerShopBtn">Reserve Your Piece</a>
+      </div>
+      <div class="banner-stats">
+        <div class="stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Years of Craft</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">80+</span>
+          <span class="stat-label">Countries Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Sustainable Fabrics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-img-wrap reveal-left">
+        <img src="images/about_brand.png" alt="ORIGIN atelier" class="about-img" />
+        <div class="about-img-badge">
+          <span class="badge-year">Est.</span>
+          <span class="badge-num">2014</span>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="section-tag">— Our Story —</span>
+        <h2 class="section-title">Born From Light,<br /><em>Built to Last.</em></h2>
+        <p class="about-text">ORIGIN was founded in 2014 in the sun-drenched hills of Lyon, France, with a singular vision: that clothing should feel as extraordinary as it looks. We believe true luxury lives in the details — the weight of a fabric, the fall of a hem, the integrity of every seam.</p>
+        <p class="about-text">Every garment we create begins with the most responsibly sourced materials — organic linens from Belgium, Supima cotton from California, peace silks from India — and is crafted by skilled artisans who share our commitment to excellence.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🌿</div>
+            <div>
+              <strong>Sustainably Sourced</strong>
+              <p>All fabrics are ethically and sustainably produced.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🧵</div>
+            <div>
+              <strong>Artisan Crafted</strong>
+              <p>Each piece is hand-finished by master tailors.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">♾️</div>
+            <div>
+              <strong>Timeless Design</strong>
+              <p>We design beyond trends — pieces that endure.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary" id="readMoreBtn">Read Our Full Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOOKBOOK ========== -->
+  <section class="lookbook" id="lookbook">
+    <div class="section-header reveal-up">
+      <span class="section-tag">— Lookbook —</span>
+      <h2 class="section-title">Summer '26 Edit</h2>
+    </div>
+    <div class="lookbook-grid">
+      <div class="look-item look-tall reveal-up">
+        <img src="images/hero_fashion.png" alt="Summer Look 1" />
+        <div class="look-overlay">
+          <span>The Soleil</span>
+          <a href="#" id="look1Btn">Shop Look →</a>
+        </div>
+      </div>
+      <div class="look-item reveal-up delay-1">
+        <img src="images/product_dress.png" alt="Summer Look 2" />
+        <div class="look-overlay">
+          <span>Evening Edit</span>
+          <a href="#" id="look2Btn">Shop Look →</a>
+        </div>
+      </div>
+      <div class="look-item reveal-up delay-2">
+        <img src="images/product_shirt.png" alt="Summer Look 3" />
+        <div class="look-overlay">
+          <span>Linen Hours</span>
+          <a href="#" id="look3Btn">Shop Look →</a>
+        </div>
+      </div>
+      <div class="look-item look-wide reveal-up delay-3">
+        <img src="images/about_brand.png" alt="Summer Look 4" />
+        <div class="look-overlay">
+          <span>The Atelier</span>
+          <a href="#" id="look4Btn">Shop Look →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <!-- <section class="testimonials">
+    <div class="section-header reveal-up">
+      <span class="section-tag">— Clientele —</span>
+      <h2 class="section-title">Worn & Loved</h2>
+    </div>
+    <div class="testimonials-track" id="testimonialsTrack">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"ORIGIN has completely redefined my wardrobe. The fabric quality is unlike anything I've owned before — effortless, luxurious, and enduring."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#C4A882,#E8DFD0)">S</div>
+          <div>
+            <strong>Sophia L.</strong>
+            <span>Paris, France</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The Artisan Linen Shirt is my most worn piece this summer. It's elevated my style and yet feels like wearing air. Absolutely worth every cent."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#7A9E9F,#C4E0E1)">J</div>
+          <div>
+            <strong>James K.</strong>
+            <span>London, UK</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I wore the slip dress to a gallery opening and received compliments all night. ORIGIN pieces simply make you feel radiant."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#D4A5A5,#F0D9D9)">A</div>
+          <div>
+            <strong>Amara B.</strong>
+            <span>New York, USA</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Sustainable AND stunning? I was skeptical, but ORIGIN proves you don't have to compromise. Exceptional craftsmanship, beautiful packaging."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#A5B8D4,#D9E5F0)">M</div>
+          <div>
+            <strong>Mia T.</strong>
+            <span>Tokyo, Japan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots">
+      <button class="dot-btn active" id="dot0"></button>
+      <button class="dot-btn" id="dot1"></button>
+      <button class="dot-btn" id="dot2"></button>
+      <button class="dot-btn" id="dot3"></button>
+    </div>
+  </section> -->
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="newsletter-inner reveal-up">
+      <span class="section-tag">— Stay in the Light —</span>
+      <h2 class="newsletter-title">Exclusive Access<br />Awaits You</h2>
+      <p class="newsletter-sub">Join our inner circle for early collection access, style notes from our atelier, and 10% off your first order.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" class="newsletter-input" id="emailInput" required />
+        <button type="submit" class="btn btn-primary" id="subscribeBtn">Join the Circle</button>
+      </form>
+      <p class="newsletter-fine">We respect your privacy. Unsubscribe at any time.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="section-header reveal-up">
+      <span class="section-tag">— Get in Touch —</span>
+      <h2 class="section-title">We'd Love to Hear<br />From You</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Flagship Store</strong>
+            <p>Etah 207001, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <strong>Email Us</strong>
+            <p>hello@ORIGIN-brand.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Client Care</strong>
+            <p>+91 00 00 00 00 00</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <strong>Hours</strong>
+            <p>Mon–Sat: 10AM – 7PM<br />Sun: 11AM – 5PM</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Sophie" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Laurent" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" placeholder="hello@youremail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">Select a topic</option>
+            <option>General Enquiry</option>
+            <option>Order Support</option>
+            <option>Styling Advice</option>
+            <option>Wholesale & Press</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us how we can help..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width" id="sendMsgBtn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="#" class="footer-logo">ORIGIN</a>
+        <p class="footer-tagline">Refined fashion for the<br />luminous soul.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram" id="igBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Pinterest" id="pinBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.19-.76 1.26-5.34 1.26-5.34s-.32-.64-.32-1.59c0-1.49.87-2.6 1.94-2.6.92 0 1.36.69 1.36 1.52 0 .92-.59 2.31-.89 3.59-.25 1.07.53 1.94 1.58 1.94 1.9 0 3.36-2 3.36-4.88 0-2.55-1.84-4.34-4.46-4.34-3.04 0-4.82 2.28-4.82 4.63 0 .92.35 1.9.79 2.43.09.1.1.19.07.3-.08.33-.26 1.07-.3 1.22-.05.2-.17.24-.38.14-1.39-.65-2.26-2.68-2.26-4.32 0-3.5 2.55-6.72 7.35-6.72 3.86 0 6.86 2.75 6.86 6.42 0 3.83-2.41 6.91-5.76 6.91-1.13 0-2.19-.59-2.55-1.28l-.69 2.6c-.25.96-.93 2.16-1.39 2.9.75.23 1.55.36 2.37.36 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="TikTok" id="tikBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#" id="shopWomen">Women</a></li>
+          <li><a href="#" id="shopMen">Men</a></li>
+          <li><a href="#" id="shopEssentials">Essentials</a></li>
+          <li><a href="#" id="shopNew">New Arrivals</a></li>
+          <li><a href="#" id="shopSale">Sale</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about" id="compAbout">Our Story</a></li>
+          <li><a href="#" id="compSustain">Sustainability</a></li>
+          <li><a href="#" id="compCareers">Careers</a></li>
+          <li><a href="#" id="compPress">Press</a></li>
+          <li><a href="#contact" id="compContact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#" id="supShipping">Shipping & Returns</a></li>
+          <li><a href="#" id="supSizing">Size Guide</a></li>
+          <li><a href="#" id="supCare">Fabric Care</a></li>
+          <li><a href="#" id="supFaq">FAQ</a></li>
+          <li><a href="#" id="supPrivacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ORIGIN. All rights reserved. Crafted with care.</p>
+      <div class="payment-icons">
+        <span class="pay-icon">VISA</span>
+        <span class="pay-icon">MC</span>
+        <span class="pay-icon">AMEX</span>
+        <span class="pay-icon">PayPal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Bag</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your bag is empty</p>
+        <a href="#collections" class="btn btn-primary" id="startShoppingBtn">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <p class="cart-note">Taxes & shipping calculated at checkout</p>
+      <button class="btn btn-primary full-width" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
